@@ -1,0 +1,50 @@
+/* Match the two supplied ReactBits references: magenta dither, black cinema title. */
+body,.site{background:#111017!important;color:#f9e5f0!important}
+.topbar{background:#111017!important;color:#fff!important}
+.date-small{color:#b9a9b6!important}
+.hero{background:#ec4899!important;min-height:600px;border:1px solid #f8a2cc}
+.hero{background:#110e16!important;border-color:#322737!important}
+.hero{border:0!important}
+.hero-photo-fallback{display:none!important}
+.dither-wrap{position:absolute;inset:0;z-index:1;opacity:1!important;filter:none!important;mix-blend-mode:normal!important}
+.dither-fallback{width:100%;height:100%;object-fit:contain;display:block}
+.hero-overlay{background:linear-gradient(0deg,rgba(15,5,16,.4),transparent 24%)!important}
+.hero-number{color:#fff7fb}
+.greeting{background:#111017!important;padding:100px 24px 110px!important}
+.greeting .eyebrow{color:#fc1787!important}
+.heading-wrap{border:0!important;box-shadow:none!important}
+.heading-wrap{max-width:1150px!important;margin:auto;background:#111017;border:1px solid #332c37;border-radius:18px;padding:70px clamp(8px,4vw,55px);box-shadow:0 28px 65px #0003}
+.birthday-heading{font-family:Inter,'DM Sans',Arial,sans-serif!important;color:#fc1787!important;font-weight:700!important;min-height:240px;letter-spacing:-.03em!important}
+.birthday-heading .masked-heading__tint{background:#fc1787!important;mix-blend-mode:color!important;opacity:1!important}
+.plain-heading{color:#fc1787!important;font-family:Inter,Arial,sans-serif!important;font-weight:800!important}
+.dedication{color:#cfb9c9!important}
+.separator{background:linear-gradient(90deg,transparent,#7d395c,transparent)!important}
+.count-section{background:#19121d!important}
+.count-section h2{color:#fce7f4!important}.sub{color:#c9adbf!important}
+.timebox{background:#271726!important;border-color:#75405e!important}
+.value{color:#fce5f2}.unit{color:#d8a3c2!important}
+.timebox{border-color:#a72a70!important;background:linear-gradient(145deg,#32132b,#1d101e)!important;box-shadow:0 0 28px #fc17871a,inset 0 1px #fc17872a}
+.value{color:#fc1787!important;text-shadow:0 0 24px #fc17874d}
+.unit{color:#f4a5d0!important}
+.count-section .eyebrow{color:#fc1787!important}
+.count-section .sub{line-height:2;color:#dfaeca!important}
+.birthday-heading .masked-heading__tint{mix-blend-mode:color!important;opacity:.72!important}
+.greeting{padding:68px 18px 78px!important}
+.greeting .eyebrow{letter-spacing:.3em;font-size:12px;margin-bottom:16px!important}
+.heading-wrap{padding:34px clamp(4px,2vw,26px)!important}
+.birthday-heading{min-height:250px!important;line-height:.93!important;letter-spacing:-.045em!important}
+@media(max-width:650px){.greeting{padding:52px 10px 66px!important}.greeting .eyebrow{font-size:10px!important;letter-spacing:.17em!important}.heading-wrap{padding:22px 4px!important}.birthday-heading{min-height:170px!important}}
+.greeting .birthday-timer{max-width:780px;margin:20px auto 0;gap:12px}
+.greeting .birthday-timer .timebox{background:transparent!important;box-shadow:none!important;border:0!important;padding:18px 8px 8px}
+.greeting .birthday-timer .value{font-family:Inter,'DM Sans',sans-serif;font-size:clamp(42px,7vw,82px);font-weight:800;letter-spacing:-.05em}
+.greeting .birthday-timer .unit{font-size:11px;letter-spacing:.22em;margin-top:4px}
+@media(max-width:650px){.greeting .birthday-timer{gap:2px;margin-top:12px}.greeting .birthday-timer .timebox{padding:12px 2px}.greeting .birthday-timer .value{font-size:clamp(32px,10vw,56px)}.greeting .birthday-timer .unit{font-size:8px;letter-spacing:.12em}}
+.music{background:radial-gradient(ellipse at center,#3b1730 0%,#111017 75%)!important;border-color:#6e3455!important}
+.music h2{color:#fff0fa!important}.music p{color:#cda9bd!important}
+.foot{background:#111017!important;color:#aa7c9b!important}
+@media(max-width:650px){
+  .hero{min-height:500px;height:68svh}
+  .greeting{padding:70px 12px 80px!important}
+  .heading-wrap{padding:55px 13px;border-radius:12px}
+  .birthday-heading{min-height:180px}
+}

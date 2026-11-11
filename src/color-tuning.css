@@ -1,0 +1,35 @@
+.greeting{background:radial-gradient(ellipse at 50% 50%,#3c0a25 0%,#15080d 72%)}
+.greeting .eyebrow{color:#fc1787}
+.birthday-heading{color:#fc1787!important;font-family:Italiana,serif!important}
+.birthday-heading .masked-heading__tint{background:#fc1787!important;mix-blend-mode:color!important}
+.plain-heading{color:#fc1787}
+.hero{background:#fafafa}
+.hero-photo-fallback{filter:grayscale(1) sepia(.65) hue-rotate(300deg) saturate(1.5) contrast(1.15)}
+.dither-wrap{filter:none!important;opacity:.9!important;mix-blend-mode:multiply!important}
+.hero-overlay{background:linear-gradient(0deg,#4c0e0ecc 0%,transparent 36%),linear-gradient(90deg,#4c0e0e77,transparent 70%)!important}
+@media(max-width:650px){.birthday-heading{min-height:190px}}
+/* Light, rosy editorial canvas with white-stipple reveal. */
+body{background:#f5e4ec!important;color:#4c0e0e!important}
+.topbar{background:#f5e4ec;color:#4c0e0e}
+.date-small{color:#81415c!important}
+.hero{background:#8b3a67!important}
+.hero-photo-fallback{filter:grayscale(1) brightness(1.6)!important}
+.dither-wrap{opacity:1!important;mix-blend-mode:normal!important;filter:none!important;z-index:1}
+.hero-overlay{z-index:2;pointer-events:none;background:linear-gradient(0deg,#541633aa,transparent 28%)!important}
+.hero-content,.hero-star{z-index:3;color:#fff}
+.greeting{background:radial-gradient(ellipse at 50% 50%,#ffedf5 0%,#f5e4ec 78%)!important;padding-top:122px;padding-bottom:110px}
+.heading-wrap{max-width:1400px!important}
+.birthday-heading{min-height:350px;font-family:'DM Sans',sans-serif!important;color:#fc1787!important}
+.birthday-heading .masked-heading__tint{mix-blend-mode:normal!important;opacity:.9}
+.dedication{color:#70435b!important;font-size:17px!important}
+.separator{background:linear-gradient(90deg,transparent,#d68bad,transparent)!important}
+.count-section{background:#f5e4ec}
+.count-section h2{color:#4c0e0e}
+.sub{color:#855c6d!important}
+.timebox{background:#ffeefa!important;border-color:#d79ab7!important}
+.value{color:#6c2448}.unit{color:#a24776!important}
+.music{background:radial-gradient(ellipse at center,#ffebf3 0%,#f5e4ec 75%)!important;border-top-color:#dba3ba!important}
+.music h2{color:#4c0e0e}.music p{color:#835366!important}
+.music button{background:#fc1787!important;color:#fff!important}
+.foot{background:#f5e4ec;color:#8f496d!important}
+@media(max-width:650px){.greeting{padding-top:85px;padding-bottom:85px}.birthday-heading{min-height:310px}.hero{min-height:490px}}
