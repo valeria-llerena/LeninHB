@@ -53,7 +53,7 @@ function App(){
           clickBurst
         /></SafeBoundary></div>
         <div className="hero-overlay"/>
-        <div className="hero-content"><span className="hero-caption">A star was born<br/>12 · 11 · 26</span><span className="hero-number">12</span></div>
+        <div className="hero-content"><span className="hero-caption">He is the moment.<br/>12 · 11 · 26</span><span className="hero-number">12</span></div>
       </section>
       <section className="greeting"><p className="eyebrow">EVERY SINGLE NIGHT I PRAY THAT IT'S ...</p><div className="heading-wrap">
         <SafeBoundary fallback={<h1 className="plain-heading">Lenin's Birthday</h1>}><MaskedHeading
