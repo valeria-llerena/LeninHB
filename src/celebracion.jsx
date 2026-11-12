@@ -12,21 +12,21 @@ import './gift-vault.css';
 // EDITAR AQUÍ: cambia el título y la descripción de cada fotografía cuando quieras.
 // Las 9 fotografías están en public/recuerdos y se muestran en este mismo orden.
 const memories = [
-  {image: `${import.meta.env.BASE_URL}recuerdos/01-actualizada.webp`, title: 'Recuerdo 01', description: 'Una selfie para el recuerdo ♡'},
-  {image: `${import.meta.env.BASE_URL}recuerdos/02.webp`, title: 'Recuerdo 02', description: 'Momentos con gente bonita.'},
-  {image: `${import.meta.env.BASE_URL}recuerdos/03.webp`, title: 'Recuerdo 03', description: 'Otra aventura juntos.'},
-  {image: `${import.meta.env.BASE_URL}recuerdos/04.webp`, title: 'Recuerdo 04', description: 'Una salida muy especial.'},
-  {image: `${import.meta.env.BASE_URL}recuerdos/05.webp`, title: 'Recuerdo 05', description: 'De mis fotos favoritas.'},
-  {image: `${import.meta.env.BASE_URL}recuerdos/06.webp`, title: 'Recuerdo 06', description: 'Los momentos simples también cuentan.'},
-  {image: `${import.meta.env.BASE_URL}recuerdos/08.webp`, title: 'Recuerdo 07', description: 'Una noche para recordar.'},
-  {image: `${import.meta.env.BASE_URL}recuerdos/09.webp`, title: 'Recuerdo 08', description: 'Un atardecer bonito contigo.'},
-  {image: `${import.meta.env.BASE_URL}recuerdos/10.webp`, title: 'Recuerdo 09', description: 'Pequeños momentos, grandes recuerdos.'}
+  {image: `${import.meta.env.BASE_URL}recuerdos/01-actualizada.webp`, title: 'Saliendo en Perú', description: 'Back when we were 16 at the bronx ♡'},
+  {image: `${import.meta.env.BASE_URL}recuerdos/02.webp`, title: 'De paseo en BA', description: 'Face Caard!! Never Declines'},
+  {image: `${import.meta.env.BASE_URL}recuerdos/03.webp`, title: 'En un tren a la Ciudad de la Furia', description: 'Otra aventura juntos.'},
+  {image: `${import.meta.env.BASE_URL}recuerdos/04.webp`, title: 'Belgranoo C(unt)', description: 'Se encontraron pasaportes :)'},
+  {image: `${import.meta.env.BASE_URL}recuerdos/05.webp`, title: 'Último Día en BA', description: 'En nuestra último día de compras!'},
+  {image: `${import.meta.env.BASE_URL}recuerdos/06.webp`, title: 'La familia completa', description: 'Cuidandooo a nuestroo hijo :)'},
+  {image: `${import.meta.env.BASE_URL}recuerdos/08.webp`, title: 'Cena Expensiva', description: 'La mejor manera de desahacerse de 100k.'},
+  {image: `${import.meta.env.BASE_URL}recuerdos/09.webp`, title: 'Al lado del río', description: 'Un atardecer bonito contigo y Lisandro'},
+  {image: `${import.meta.env.BASE_URL}recuerdos/10.webp`, title: 'Curando el cáncer', description: 'Haciendo un muy importante research.'}
 ];
 
 const gifts = [
-  {id:'coffee', icon:'☕', title:'Starbucks', subtitle:'Un cafecito para ti', backTitle:'Tu gift card', backDetail:'CÓDIGO: PENDIENTE', hint:'Aquí agregaré el código o enlace real.'},
-  {id:'perfume', icon:'✧', title:'Un perfume', subtitle:'Algo que huele a ti', backTitle:'En camino para ti', backDetail:'SEGUIMIENTO: PENDIENTE', hint:'Aquí agregaré el número o enlace de seguimiento.'},
-  {id:'surprise', icon:'✈', title:'Sorpresa', subtitle:'La mejor parte…', backTitle:'¡Voy a Neuquén!', backDetail:'NOS VEMOS PRONTO ♡', hint:'Esta sorpresa es de verdad.'}
+  {id:'coffee', icon:'☕', title:'Starbucks', subtitle:'Pumpkin Spice Latte', backTitle:'Tu gift card', backDetail:'CÓDIGO: TE LLEGO AL CORREO', hint:'Revisa tu correo pls.'},
+  {id:'perfume', icon:'✧', title:'Un perfume', subtitle:'Guccii', backTitle:'En camino para ti', backDetail:'SEGUIMIENTO: TE LLEGO AL WSP', hint:'No lo agrego aqui para que no nos doxeen en Vietnamina.'},
+  {id:'surprise', icon:'✈', title:'Viaje', subtitle:'La mejor parte…', backTitle:'Voy a Buenos Aires!', backDetail:'NOS VEMOS PRONTO', hint:'En Febrero, probablemente también a Neuquén.'}
 ];
 
 // Enlace compartido por Valeria. Si Canva cambia la URL, actualizarla aquí.
