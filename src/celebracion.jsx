@@ -68,8 +68,27 @@ function RisingConfetti(){
 
 function GiftFolder(){
   const [selected,setSelected]=useState(null);
+  const [screenWidth, setScreenWidth] = useState(
+    () => window.innerWidth
+  );
+
+  useEffect(() => {
+    const update = () => setScreenWidth(window.innerWidth);
+
+    window.addEventListener('resize', update, {
+      passive: true
+    });
+
+    return () => window.removeEventListener('resize', update);
+  }, []);
+
+  const isMobile = screenWidth <= 650;
+  const folderSize =
+    screenWidth <= 360 ? 0.72 :
+    screenWidth <= 430 ? 0.86 :
+    isMobile ? 1.02 : 1.45;
   const papers=gifts.map(gift=>({title:gift.title,description:gift.subtitle}));
-  return <div className="gift-vault"><div className="gift-vault-top"><span>3 SORPRESAS</span><span>1 CARPETITA ROSA ♡</span></div><div className="gift-vault-folder"><Folder items={papers} label="FOR LENIN ♡" mode="flap" variant="solid" color="#ec4899" paperColor="#fffaf4" tabPosition="right" layout="spread" size={1.45} openOn="click" onItemClick={(_,index)=>setSelected(gifts[index])} draggable={false} zoomOnClick={false} peek intro tilt={0.5} bounce={0.45} speed={1} theme="light"/></div><p className="gift-vault-help">Abre la carpeta rosa y toca uno de los tres regalitos.</p>
+  return <div className="gift-vault"><div className="gift-vault-top"><span>3 SORPRESAS</span><span>1 CARPETITA ROSA ♡</span></div><div className="gift-vault-folder"><Folder items={papers} label="FOR LENIN ♡" mode="flap" variant="solid" color="#ec4899" paperColor="#fffaf4" tabPosition="right" layout={isMobile ? "stack" : "spread"} size={folderSize} openOn="click" onItemClick={(_,index)=>setSelected(gifts[index])} draggable={false} zoomOnClick={false} peek intro tilt={0.5} bounce={0.45} speed={1} theme="light"/></div><p className="gift-vault-help">Abre la carpeta rosa y toca uno de los tres regalitos.</p>
     {selected&&<div className="gift-reveal-backdrop" onClick={()=>setSelected(null)} role="presentation"><section className="gift-reveal" role="dialog" aria-modal="true" aria-label={`Regalo: ${selected.title}`} onClick={e=>e.stopPropagation()}><button type="button" className="gift-reveal-close" onClick={()=>setSelected(null)} aria-label="Cerrar regalo">×</button><span className="gift-reveal-icon" aria-hidden="true">{selected.icon}</span><span className="gift-reveal-label">PARA TI, LENIN ♡</span><h3>{selected.backTitle}</h3><strong>{selected.backDetail}</strong><p>{selected.hint}</p><button type="button" className="gift-reveal-done" onClick={()=>setSelected(null)}>Seguir descubriendo →</button></section></div>}
   </div>;
 }
